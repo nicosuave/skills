@@ -1,7 +1,8 @@
 ---
 name: multiclaude
 description: Multi-phase agent orchestration. Fan out parallel agents to explore, research, and synthesize findings. Use when the user wants comprehensive investigation of a problem, codebase area, or question that benefits from parallel exploration.
-allowed-tools: Read Write(~/.agents/findings/*) Bash(mkdir:~/.agents/findings)
+allowed-tools: Read WebSearch WebFetch Write(~/.agents/findings/*) Bash(mkdir:~/.agents/findings)
+compatibility: Codex users must add ~/.agents/findings to writable_roots in config.toml or use --add-dir ~/.agents/findings
 ---
 
 # Parallel Agent Orchestration
