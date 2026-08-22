@@ -1,6 +1,6 @@
 # Skills
 
-A collection of [Agent Skills](https://agentskills.io) tested with Claude Code and Codex.
+A collection of [Agent Skills](https://agentskills.io)
 
 ## Available Skills
 
