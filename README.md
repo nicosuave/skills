@@ -17,5 +17,5 @@ bunx skills add nicosuave/skills
 Install only the workflow skill:
 
 ```bash
-bunx skills add nicosuave/skills/workflow
+bunx skills add nicosuave/skills --skill workflow
 ```
