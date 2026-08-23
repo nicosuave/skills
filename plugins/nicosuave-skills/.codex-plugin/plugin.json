@@ -1,0 +1,37 @@
+{
+  "name": "nicosuave-skills",
+  "version": "0.1.0",
+  "description": "Agent workflow, context engineering, and primary-source research skills.",
+  "author": {
+    "name": "Nico Ritschel",
+    "url": "https://github.com/nicosuave"
+  },
+  "homepage": "https://github.com/nicosuave/skills",
+  "repository": "https://github.com/nicosuave/skills",
+  "license": "UNLICENSED",
+  "keywords": [
+    "agent-skills",
+    "workflow",
+    "context-engineering",
+    "research"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Nico's Skills",
+    "shortDescription": "Build better agent workflows and context",
+    "longDescription": "Use Nico's Skills to choose multi-agent workflow topologies, design and audit agent context, and research precise claims from primary sources.",
+    "developerName": "Nico Ritschel",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/nicosuave/skills",
+    "defaultPrompt": [
+      "Choose a multi-agent workflow for this task",
+      "Audit this agent context for routing and duplication",
+      "Research this question from primary sources"
+    ]
+  }
+}

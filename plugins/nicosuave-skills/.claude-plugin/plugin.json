@@ -1,0 +1,19 @@
+{
+  "name": "nicosuave-skills",
+  "version": "0.1.0",
+  "description": "Agent workflow, context engineering, and primary-source research skills.",
+  "author": {
+    "name": "Nico Ritschel",
+    "url": "https://github.com/nicosuave"
+  },
+  "homepage": "https://github.com/nicosuave/skills",
+  "repository": "https://github.com/nicosuave/skills",
+  "license": "UNLICENSED",
+  "keywords": [
+    "agent-skills",
+    "workflow",
+    "context-engineering",
+    "research"
+  ],
+  "skills": "./skills/"
+}
