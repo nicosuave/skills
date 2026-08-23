@@ -1,6 +1,6 @@
 interface:
   display_name: "Context Engineering"
   short_description: "Design and audit high-signal agent context"
-  default_prompt: "Audit this agent context for scope, routing, duplication, and observable completion criteria."
+  default_prompt: "Use $context-engineering to audit this agent context for scope, routing, duplication, and observable completion criteria."
 policy:
   allow_implicit_invocation: true
