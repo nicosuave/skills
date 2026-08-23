@@ -1,0 +1,22 @@
+{
+  "name": "nicosuave",
+  "owner": {
+    "name": "Nico Ritschel",
+    "url": "https://github.com/nicosuave"
+  },
+  "description": "Nico Ritschel's skills for agent workflows, context engineering, and primary-source research.",
+  "plugins": [
+    {
+      "name": "nicosuave-skills",
+      "source": "./plugins/nicosuave-skills",
+      "description": "Agent workflow, context engineering, and primary-source research skills.",
+      "category": "engineering",
+      "keywords": [
+        "agent-skills",
+        "workflow",
+        "context-engineering",
+        "research"
+      ]
+    }
+  ]
+}

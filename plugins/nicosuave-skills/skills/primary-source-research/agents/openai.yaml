@@ -1,0 +1,6 @@
+interface:
+  display_name: "Primary Source Research"
+  short_description: "Research precise claims from primary sources"
+  default_prompt: "Research this question from the primary sources that directly own each material claim."
+policy:
+  allow_implicit_invocation: true
