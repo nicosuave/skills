@@ -1,11 +1,11 @@
 ---
 name: workflow
-description: Select and compose multi-agent workflow topologies for complex coding, research, investigation, review, and implementation tasks. Use when multiple agents could create useful independence, parallelism, adversarial checking, or staged specialization. Supports chain, fan-out, scout-fan-out, ensemble, critic-loop, wavefront/DAG, and work-queue patterns and adapts them to the capabilities of the current harness.
+description: "Use when the user asks to design agent orchestration or concrete independent subtasks justify delegation and need coordination. Not for ordinary multi-step work, quick searches, or tasks that are merely large or uncertain. Choose the smallest useful workflow, including staying single-agent."
 ---
 
 # Workflow
 
-Use multiple agents only when they create meaningful independence, specialization, or concurrency. Do not fan out merely because a task is large.
+Start with the current agent. Use multiple agents only when a concrete independent assignment is likely to save enough time or improve confidence to outweigh briefing, duplicated context, coordination, and review. The patterns below are options, not stages to execute or a reason to create more agents.
 
 The governing principle is:
 
@@ -17,7 +17,7 @@ Do not require user confirmation merely to spawn or fan out agents. Ask the user
 
 Before spawning agents, classify the task.
 
-Stay single-agent when most of the following are true:
+Reasons to stay single-agent include:
 
 - the next useful step is obvious;
 - later work depends strongly on earlier work;
@@ -26,7 +26,7 @@ Stay single-agent when most of the following are true:
 - independent answers would not materially improve confidence;
 - agents would contend on the same files or state.
 
-Delegate when one or more of the following are true:
+Consider delegation when the following identify a specific useful assignment; no item is sufficient without the cost/benefit check above:
 
 - there are independent facets that can be investigated concurrently;
 - several competing hypotheses or designs should be explored without anchoring;
@@ -34,9 +34,9 @@ Delegate when one or more of the following are true:
 - implementation can be split by ownership boundaries;
 - an independent verifier/reviewer materially improves correctness;
 - the task contains a large number of similarly shaped items;
-- intermediate evidence may reveal new branches worth exploring.
+- existing evidence identifies a distinct unresolved question another agent can answer independently.
 
-Complexity alone is not a delegation signal. **Parallelizable uncertainty is.**
+Complexity or parallelizable uncertainty alone is not enough. Before spawning, know what the worker will return, what useful work continues locally, and why reconciling the result is cheaper or more reliable than doing it locally. If the next step is a quick read or lookup, do it locally first.
 
 ## 2. Select a Topology
 
@@ -166,7 +166,7 @@ Shape:
 
 Use for tasks that mix independent and dependent work.
 
-This is the preferred general form for nontrivial investigations and implementations. Construct parallel waves separated by dependency barriers.
+Use this only when already-justified parallel assignments have real dependency barriers. Ordinary multi-step investigations and implementations can stay with one agent.
 
 Examples:
 
@@ -322,7 +322,7 @@ Start with the minimum number of agents that gives useful diversity or paralleli
 
 Prefer expansion-on-evidence:
 
-- initial scout or small fan-out;
+- one concrete worker when sufficient; use a scout only when discovery itself is substantial independent work;
 - inspect results;
 - add targeted workers only for unresolved or newly discovered branches.
 

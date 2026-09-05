@@ -1,6 +1,6 @@
 interface:
   display_name: "Primary Source Research"
   short_description: "Research precise claims from primary sources"
-  default_prompt: "Use $primary-source-research to research this question from the primary sources that directly own each material claim."
+  default_prompt: "Use $primary-source-research to answer with the smallest sufficient set of authoritative evidence; expand only for material gaps or conflicting claims."
 policy:
   allow_implicit_invocation: true

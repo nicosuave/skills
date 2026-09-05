@@ -1,11 +1,15 @@
 ---
 name: primary-source-research
-description: "Research technical, scientific, product, policy, legal, financial, or market questions from sources that directly own the relevant facts. Use when current, precise, niche, disputed, or externally verifiable evidence matters; when claims should be traced through secondary coverage to original documents, source code, specifications, papers, datasets, filings, or first-party records."
+description: "Use for explicit primary-source research or substantive external questions requiring comparison of evidence, resolution of conflicting claims, or provenance tracing. Not for quick factual lookups, routine code inspection, supplied-material summaries, or prior-session recall."
 ---
 
 # Primary Source Research
 
 Use sources that can directly establish the claim. Secondary sources are useful for discovery, terminology, and competing interpretations; they should not carry a material factual claim when an accessible primary source owns it.
+
+Match depth to the requested answer. These sections are decision aids, not a checklist to execute on every question. A focused authoritative lookup can be sufficient; stop once the material uncertainty is resolved. Being technical, current, or precise does not by itself require a research workflow.
+
+For prior-session questions, retrieve the relevant history (prefer Memex when available). For supplied screenshots or text, explain that material first. Verify current external behavior only when the user asks or the answer depends on it; do not silently turn recall or interpretation into a fresh investigation. Do not clone repositories or trace implementation merely because code is a possible source; use that depth when the question requires it or cheaper evidence leaves a consequential gap.
 
 The governing principle is:
 
@@ -54,7 +58,7 @@ Use secondary sources to locate primary material, understand vocabulary, discove
 
 Search around the claim, not only the user's wording. Include exact identifiers, prior names, version numbers, specification sections, code symbols, authors, and organizations that may own the evidence.
 
-When multiple independent facets exist, use the `workflow` skill to choose a topology. Good research partitions include:
+Keep research with one agent unless a concrete, bounded independent task will save enough time or improve confidence to outweigh briefing, duplicated context, and review. Multiple facets or source types alone do not justify delegation. Use the `workflow` skill only if an actual orchestration choice needs it. Potential partitions, after that decision, include:
 
 - separate source-owning organizations;
 - implementation versus specification;
@@ -76,7 +80,7 @@ Inspect enough of the underlying source to establish:
 - nearby exceptions and definitions;
 - whether later material supersedes it.
 
-For code, follow the executed path and relevant tests rather than stopping at a README or symbol name. For documents, read the controlling section and definitions rather than one isolated sentence. For datasets, inspect methodology, fields, coverage, and revision status.
+When implementation behavior is the question, follow the relevant executed path and tests far enough to resolve it. For documents, read the controlling section and any definitions that affect the answer. For datasets, inspect the methodology and coverage relevant to the claim. Expand only when the evidence exposes a material gap.
 
 ## 5. Record Evidence With Scope
 
